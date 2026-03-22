@@ -1,0 +1,278 @@
+{"level":30,"time":"2026-03-18T21:13:54.241Z","pid":2476,"hostname":"Compassion123","msg":"Listening on 127.0.0.1:62622"}
+{"level":30,"time":"2026-03-18T21:13:54.415Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:54.523Z","pid":2476,"hostname":"Compassion123","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-18T21:13:54.523Z","pid":2476,"hostname":"Compassion123","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-18T21:13:54.524Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:54.531Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:54.531Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@79358185b72488cc2d617674a3796ec5\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=ef2ebbb4-6342-4b9c-8ce2-444af052e041\"}"}
+{"level":30,"time":"2026-03-18T21:13:54.544Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=cfe8d5f2-b281-4264-b4ad-b14f4d5f2315 to 10000"}
+{"level":30,"time":"2026-03-18T21:13:54.544Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=cfe8d5f2-b281-4264-b4ad-b14f4d5f2315"}
+{"level":30,"time":"2026-03-18T21:13:54.648Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:13:54.649Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:13:55.924Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:55.939Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-18T21:13:55.947Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=38c5236a-c009-4eb5-8d91-91e29db145b5 from context=cfe8d5f2-b281-4264-b4ad-b14f4d5f2315 page stack"}
+{"level":30,"time":"2026-03-18T21:13:56.030Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T21:13:56.036Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.037Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T21:13:56.044Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.044Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.064Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.064Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.069Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:56.159Z","pid":2476,"hostname":"Compassion123","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-18T21:13:56.159Z","pid":2476,"hostname":"Compassion123","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-18T21:13:56.159Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:56.164Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.164Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:56.168Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:56.168Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@bd16452dfa3349c6a3929c3ae808c1f7\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=5858449c-a349-4be7-9d3a-d9f687fd8127\"}"}
+{"level":30,"time":"2026-03-18T21:13:56.173Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=30c01158-aa8e-4981-8ce6-016619b3db88 to 10000"}
+{"level":30,"time":"2026-03-18T21:13:56.173Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=30c01158-aa8e-4981-8ce6-016619b3db88"}
+{"level":30,"time":"2026-03-18T21:13:56.273Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:13:56.273Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:13:57.438Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:57.447Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.451Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.452Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.454Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.456Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.458Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.460Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.466Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.468Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=30c01158-aa8e-4981-8ce6-016619b3db88"}
+{"level":30,"time":"2026-03-18T21:13:57.469Z","pid":2476,"hostname":"Compassion123","msg":"Changing current active page: page=7152a89b-8f44-4b81-93fa-87922357ca5d"}
+{"level":30,"time":"2026-03-18T21:13:57.469Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:13:57.471Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:13:57.474Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=da1c62c3-ec82-4a87-a074-a00f8b6144a7 from context=30c01158-aa8e-4981-8ce6-016619b3db88 page stack"}
+{"level":30,"time":"2026-03-18T21:13:57.475Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:13:57.479Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.479Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:57.484Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:57.484Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@bd16452dfa3349c6a3929c3ae808c1f7\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=5858449c-a349-4be7-9d3a-d9f687fd8127\"}"}
+{"level":30,"time":"2026-03-18T21:13:57.489Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=661e681c-c931-431b-a759-d748b1a615ad to 10000"}
+{"level":30,"time":"2026-03-18T21:13:57.489Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=661e681c-c931-431b-a759-d748b1a615ad"}
+{"level":30,"time":"2026-03-18T21:13:57.551Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:13:57.551Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:13:58.939Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:58.945Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.951Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.952Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.955Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.957Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.961Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.965Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.967Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:58.969Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=661e681c-c931-431b-a759-d748b1a615ad"}
+{"level":30,"time":"2026-03-18T21:13:58.969Z","pid":2476,"hostname":"Compassion123","msg":"Changing current active page: page=5a38965d-89af-4efb-a629-b2962033af9c"}
+{"level":30,"time":"2026-03-18T21:13:58.969Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:13:58.971Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:13:58.973Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=92830f54-2592-4138-ba59-444663b82d14 from context=661e681c-c931-431b-a759-d748b1a615ad page stack"}
+{"level":30,"time":"2026-03-18T21:13:58.975Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:13:58.980Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-18T21:13:59.064Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T21:13:59.069Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.069Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.075Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.075Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.079Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:59.193Z","pid":2476,"hostname":"Compassion123","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-18T21:13:59.193Z","pid":2476,"hostname":"Compassion123","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-18T21:13:59.193Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:13:59.199Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-18T21:13:59.199Z","pid":2476,"hostname":"Compassion123","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-03-18T21:13:59.199Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@fcffc45be934a93f368953f850b4e8a9\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=ab3bdabd-0213-4824-ad97-3ddddfc7e8ad\"}"}
+{"level":30,"time":"2026-03-18T21:13:59.199Z","pid":2476,"hostname":"Compassion123","msg":"Trace file: "}
+{"level":30,"time":"2026-03-18T21:13:59.204Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=2f8b4e2d-e5b9-4bb0-a0b8-16ddb3c994b8 to 10000"}
+{"level":30,"time":"2026-03-18T21:13:59.205Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=2f8b4e2d-e5b9-4bb0-a0b8-16ddb3c994b8"}
+{"level":30,"time":"2026-03-18T21:13:59.205Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-18T21:13:59.214Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.214Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:13:59.218Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:13:59.218Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@fcffc45be934a93f368953f850b4e8a9\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=2f8b4e2d-e5b9-4bb0-a0b8-16ddb3c994b8\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@1240ac539ba68789ec98004ecf780fa4\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=ab3bdabd-0213-4824-ad97-3ddddfc7e8ad\"}"}
+{"level":30,"time":"2026-03-18T21:13:59.338Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:13:59.338Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:00.621Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:00.625Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2026-03-18T21:14:00.625Z","pid":2476,"hostname":"Compassion123","msg":"Strict mode is disabled, return Locator: textarea[name=\"q\"] in page."}
+{"level":30,"time":"2026-03-18T21:14:00.662Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getElementCount"}
+{"level":30,"time":"2026-03-18T21:14:00.669Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.671Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.674Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.676Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.680Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closePage"}
+{"level":30,"time":"2026-03-18T21:14:00.680Z","pid":2476,"hostname":"Compassion123","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2026-03-18T21:14:00.687Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closePage"}
+{"level":30,"time":"2026-03-18T21:14:00.692Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.692Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:00.697Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:00.697Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@fcffc45be934a93f368953f850b4e8a9\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=2f8b4e2d-e5b9-4bb0-a0b8-16ddb3c994b8\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@1240ac539ba68789ec98004ecf780fa4\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=ab3bdabd-0213-4824-ad97-3ddddfc7e8ad\"}"}
+{"level":30,"time":"2026-03-18T21:14:00.772Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:14:00.772Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:01.693Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:01.707Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.708Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.711Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.714Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.715Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closePage"}
+{"level":30,"time":"2026-03-18T21:14:01.715Z","pid":2476,"hostname":"Compassion123","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2026-03-18T21:14:01.722Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closePage"}
+{"level":30,"time":"2026-03-18T21:14:01.726Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-18T21:14:01.810Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T21:14:01.815Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.815Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.820Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.820Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:01.822Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:14:02.116Z","pid":2476,"hostname":"Compassion123","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-18T21:14:02.116Z","pid":2476,"hostname":"Compassion123","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-18T21:14:02.116Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-18T21:14:02.135Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:02.135Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:02.140Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:02.140Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a6f2b300a35f5e3f24840ff00e3c2d1b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=d2ad6830-d71c-489e-8077-65d791432f03\"}"}
+{"level":30,"time":"2026-03-18T21:14:02.151Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=10389ade-0ee1-4e10-9e81-d8c8cd763e92 to 10000"}
+{"level":30,"time":"2026-03-18T21:14:02.151Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=10389ade-0ee1-4e10-9e81-d8c8cd763e92"}
+{"level":30,"time":"2026-03-18T21:14:02.468Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:14:02.468Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:03.496Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:03.501Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:03.501Z","pid":2476,"hostname":"Compassion123","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-18T21:14:03.505Z","pid":2476,"hostname":"Compassion123","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:03.524Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.530Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.535Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.538Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.541Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.546Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.551Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.554Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.558Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=10389ade-0ee1-4e10-9e81-d8c8cd763e92"}
+{"level":30,"time":"2026-03-18T21:14:03.558Z","pid":2476,"hostname":"Compassion123","msg":"Changing current active page: page=53cbd60f-c169-4835-93c9-ddfa5f13b6a4"}
+{"level":30,"time":"2026-03-18T21:14:03.558Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:03.565Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:03.574Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=109d9cc0-6ccf-4ae3-92ca-6ff84636cb3a from context=10389ade-0ee1-4e10-9e81-d8c8cd763e92 page stack"}
+{"level":30,"time":"2026-03-18T21:14:03.584Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:03.592Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.592Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:03.600Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:03.600Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a6f2b300a35f5e3f24840ff00e3c2d1b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=d2ad6830-d71c-489e-8077-65d791432f03\"}"}
+{"level":30,"time":"2026-03-18T21:14:03.630Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb to 10000"}
+{"level":30,"time":"2026-03-18T21:14:03.630Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb"}
+{"level":30,"time":"2026-03-18T21:14:03.816Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:14:03.816Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:04.553Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:04.558Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:04.558Z","pid":2476,"hostname":"Compassion123","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-18T21:14:04.559Z","pid":2476,"hostname":"Compassion123","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:04.579Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.637Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.641Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.656Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.660Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.669Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.674Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.687Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.690Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb"}
+{"level":30,"time":"2026-03-18T21:14:04.690Z","pid":2476,"hostname":"Compassion123","msg":"Changing current active page: page=a0c67388-0b08-4098-a372-2b21f7be69c4"}
+{"level":30,"time":"2026-03-18T21:14:04.690Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:04.697Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:04.706Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=31c44589-bb62-4a0e-b71c-f93fb22e03a3 from context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb page stack"}
+{"level":30,"time":"2026-03-18T21:14:04.714Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:04.721Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.721Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:04.734Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:04.736Z","pid":2476,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a6f2b300a35f5e3f24840ff00e3c2d1b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=d2ad6830-d71c-489e-8077-65d791432f03\"}"}
+{"level":30,"time":"2026-03-18T21:14:04.761Z","pid":2476,"hostname":"Compassion123","msg":"Setting default timeout for context context=225102eb-6f03-4f41-b968-174271211b00 to 10000"}
+{"level":30,"time":"2026-03-18T21:14:04.761Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=225102eb-6f03-4f41-b968-174271211b00"}
+{"level":30,"time":"2026-03-18T21:14:04.955Z","pid":2476,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T21:14:04.955Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:05.930Z","pid":2476,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T21:14:05.935Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:05.935Z","pid":2476,"hostname":"Compassion123","msg":"timeout: 10000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-18T21:14:05.936Z","pid":2476,"hostname":"Compassion123","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-18T21:14:05.952Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.957Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.961Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.963Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.966Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.968Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.973Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.977Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:05.981Z","pid":2476,"hostname":"Compassion123","msg":"Changed active context: context=225102eb-6f03-4f41-b968-174271211b00"}
+{"level":30,"time":"2026-03-18T21:14:05.981Z","pid":2476,"hostname":"Compassion123","msg":"Changing current active page: page=fcf7cd76-28ed-4a39-8bae-2db9ef6ba49d"}
+{"level":30,"time":"2026-03-18T21:14:05.981Z","pid":2476,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T21:14:05.987Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:05.997Z","pid":2476,"hostname":"Compassion123","msg":"Removed page=ff6e360d-bd7d-454e-8c88-60cd2071a6e7 from context=225102eb-6f03-4f41-b968-174271211b00 page stack"}
+{"level":30,"time":"2026-03-18T21:14:06.004Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-18T21:14:06.017Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-18T21:14:07.050Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T21:14:07.055Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:07.055Z","pid":2476,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T21:14:07.136Z","pid":2476,"hostname":"Compassion123","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-18T21:14:07.136Z","pid":2476,"hostname":"Compassion123","msg":"End of node method closeAllBrowsers"}

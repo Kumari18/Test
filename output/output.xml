@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-18T17:13:53.007404" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo.robot" source="C:\Python314\robot-learning\Demo.robot">
+<suite id="s1-s1" name="Hello" source="C:\Python314\robot-learning\Demo.robot\hello.robot">
+<test id="s1-s1-t1" name="My Very First Test" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T17:13:53.327461" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\d25421eb-c0b4-4648-acd1-1e417b188caa"}</msg>
+<msg time="2026-03-18T17:13:53.374701" level="INFO">Starting Browser process C:\Python314\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:62622</msg>
+<msg time="2026-03-18T17:13:54.531246" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\d25421eb-c0b4-4648-acd1-1e417b188caa"}</msg>
+<arg>chromium</arg>
+<arg>headless=true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T17:13:53.325200" elapsed="1.206345"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:13:55.932473" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<msg time="2026-03-18T17:13:55.932549" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.google.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:13:54.532170" elapsed="1.400521"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-18T17:13:55.942357" level="INFO">Title: 'Google'</msg>
+<arg>contains</arg>
+<arg>Google</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-18T17:13:55.933314" elapsed="0.009207"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-18T17:13:56.037803" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T17:13:55.943014" elapsed="0.094938"/>
+</kw>
+<tag>sample</tag>
+<status status="PASS" start="2026-03-18T17:13:53.323078" elapsed="2.715188"/>
+</test>
+<status status="PASS" start="2026-03-18T17:13:53.043563" elapsed="3.001033"/>
+</suite>
+<suite id="s1-s2" name="Learn" source="C:\Python314\robot-learning\Demo.robot\Learn.robot">
+<test id="s1-s2-t1" name="TEST" line="15">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is a sample test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-18T17:13:56.063048" elapsed="0.000688"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:13:56.062665" elapsed="0.001317"/>
+</test>
+<status status="PASS" start="2026-03-18T17:13:56.052212" elapsed="0.012547"/>
+</suite>
+<suite id="s1-s3" name="Search" source="C:\Python314\robot-learning\Demo.robot\search.robot">
+<kw name="Open Test Browser" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T17:13:56.073988" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\7302bc4d-2cf0-4f93-b0d3-8e80d4f3e6f4"}</msg>
+<msg time="2026-03-18T17:13:56.167089" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\7302bc4d-2cf0-4f93-b0d3-8e80d4f3e6f4"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T17:13:56.073034" elapsed="0.094320"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:13:56.072439" elapsed="0.095148"/>
+</kw>
+<test id="s1-s3-t1" name="Google Page Should Have Search Box" line="12">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:13:57.445849" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<msg time="2026-03-18T17:13:57.445964" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${SEARCH_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:13:56.171719" elapsed="1.274484"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2026-03-18T17:13:57.447647" level="FAIL">Keyword 'Browser.Get Element' expected 1 argument, got 4.</msg>
+<arg>Count</arg>
+<arg>textarea[name="q"]</arg>
+<arg>should be</arg>
+<arg>1</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="FAIL" start="2026-03-18T17:13:57.446792" elapsed="0.000931">Keyword 'Browser.Get Element' expected 1 argument, got 4.</status>
+</kw>
+<msg time="2026-03-18T17:13:57.465133" level="INFO">Switching context to context=30c01158-aa8e-4981-8ce6-016619b3db88 in CURRENT</msg>
+<msg time="2026-03-18T17:13:57.476245" level="INFO">Successfully changed active context: context=30c01158-aa8e-4981-8ce6-016619b3db88</msg>
+<msg time="2026-03-18T17:13:57.482015" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-18T17:13:56.167752" elapsed="1.280627">Keyword 'Browser.Get Element' expected 1 argument, got 4.</status>
+</test>
+<test id="s1-s3-t2" name="Google Title Should Contain Google" line="16">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:13:58.946592" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<msg time="2026-03-18T17:13:58.946826" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${SEARCH_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:13:57.487432" elapsed="1.459802"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-18T17:13:58.948424" level="FAIL">ValueError: Argument 'assertion_operator' got value 'contains Google' that cannot be converted to AssertionOperator or None.</msg>
+<arg>contains Google</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="FAIL" start="2026-03-18T17:13:58.947649" elapsed="0.001010">ValueError: Argument 'assertion_operator' got value 'contains Google' that cannot be converted to AssertionOperator or None.</status>
+</kw>
+<msg time="2026-03-18T17:13:58.969631" level="INFO">Switching context to context=661e681c-c931-431b-a759-d748b1a615ad in CURRENT</msg>
+<msg time="2026-03-18T17:13:58.976332" level="INFO">Successfully changed active context: context=661e681c-c931-431b-a759-d748b1a615ad</msg>
+<msg time="2026-03-18T17:13:58.982337" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-18T17:13:57.483002" elapsed="1.465934">ValueError: Argument 'assertion_operator' got value 'contains Google' that cannot be converted to AssertionOperator or None.</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-03-18T17:13:59.071105" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T17:13:58.983490" elapsed="0.087844"/>
+</kw>
+<status status="FAIL" start="2026-03-18T17:13:56.065704" elapsed="3.005764"/>
+</suite>
+<suite id="s1-s4" name="Search1" source="C:\Python314\robot-learning\Demo.robot\search1.robot">
+<kw name="Open Test Browser" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T17:13:59.083626" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\36a5f497-43f1-48d6-a358-2f97e328065b"}</msg>
+<msg time="2026-03-18T17:13:59.200470" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\36a5f497-43f1-48d6-a358-2f97e328065b"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T17:13:59.082665" elapsed="0.118053"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-18T17:13:59.203302" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-03-18T17:13:59.212073" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-18T17:13:59.212215" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-18T17:13:59.201016" elapsed="0.011351"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:13:59.081956" elapsed="0.130606"/>
+</kw>
+<test id="s1-s4-t1" name="Google Page Should Have Search Box" line="13">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:14:00.627832" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<arg>${SEARCH_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:13:59.221119" elapsed="1.407009"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2026-03-18T17:14:00.669333" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>textarea[name="q"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2026-03-18T17:14:00.628590" elapsed="0.040819"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-03-18T17:14:00.671308" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${count}</arg>
+<arg>1</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-03-18T17:14:00.670508" elapsed="0.000913"/>
+</kw>
+<msg time="2026-03-18T17:14:00.683909" level="INFO">Closing current active page.</msg>
+<msg time="2026-03-18T17:14:00.693941" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<status status="PASS" start="2026-03-18T17:13:59.212689" elapsed="1.459069"/>
+</test>
+<test id="s1-s4-t2" name="Google Title Should Contain Google" line="18">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:14:01.700173" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<arg>${SEARCH_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:14:00.699182" elapsed="1.001316"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-18T17:14:01.708500" level="INFO">Title: 'Google'</msg>
+<msg time="2026-03-18T17:14:01.708646" level="INFO">${title} = Google</msg>
+<var>${title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-18T17:14:01.700901" elapsed="0.007770"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Google</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-03-18T17:14:01.708933" elapsed="0.000648"/>
+</kw>
+<msg time="2026-03-18T17:14:01.720655" level="INFO">Closing current active page.</msg>
+<msg time="2026-03-18T17:14:01.729176" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<status status="PASS" start="2026-03-18T17:14:00.696346" elapsed="1.013460"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-03-18T17:14:01.817492" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T17:14:01.730209" elapsed="0.087511"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:13:59.076353" elapsed="2.741468"/>
+</suite>
+<suite id="s1-s5" name="Wikipedia" source="C:\Python314\robot-learning\Demo.robot\wikipedia.robot">
+<kw name="Open Test Browser" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T17:14:01.827716" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\3631d04b-83dd-4e18-bb5f-5869d32bc116"}</msg>
+<msg time="2026-03-18T17:14:02.122876" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\output\\browser\\traces\\temp\\3631d04b-83dd-4e18-bb5f-5869d32bc116"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T17:14:01.827082" elapsed="0.296068"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:14:01.826746" elapsed="0.296611"/>
+</kw>
+<test id="s1-s5-t1" name="Search For Python Programming Language" line="13">
+<kw name="Go To Wikipedia Homepage" type="SETUP">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:14:03.503226" level="INFO">Successfully initialized new page object and opened url: https://en.wikipedia.org</msg>
+<msg time="2026-03-18T17:14:03.503345" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WIKIPEDIA_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:14:02.143496" elapsed="1.360037"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2026-03-18T17:14:03.504692" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2026-03-18T17:14:03.514022" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2026-03-18T17:14:03.503801" elapsed="0.010739"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:14:02.142781" elapsed="1.372267"/>
+</kw>
+<kw name="Search Wikipedia For">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-18T17:14:03.517991" level="FAIL">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</msg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-18T17:14:03.517091" elapsed="0.001187">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-18T17:14:03.518560" elapsed="0.000358"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>networkidle</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2026-03-18T17:14:03.519326" elapsed="0.000196"/>
+</kw>
+<arg>Python (programming language)</arg>
+<status status="FAIL" start="2026-03-18T17:14:03.516160" elapsed="0.003544">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Article Title Should Be">
+<arg>Python (programming language)</arg>
+<status status="NOT RUN" start="2026-03-18T17:14:03.520448" elapsed="0.000449"/>
+</kw>
+<msg time="2026-03-18T17:14:03.554718" level="INFO">Switching context to context=10389ade-0ee1-4e10-9e81-d8c8cd763e92 in CURRENT</msg>
+<msg time="2026-03-18T17:14:03.569838" level="INFO">Successfully changed active context: context=10389ade-0ee1-4e10-9e81-d8c8cd763e92</msg>
+<msg time="2026-03-18T17:14:03.591843" level="INFO">Successfully closed Context</msg>
+<tag>demo</tag>
+<status status="FAIL" start="2026-03-18T17:14:02.123494" elapsed="1.398158">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</test>
+<test id="s1-s5-t2" name="Search For Robot Framework" line="18">
+<kw name="Go To Wikipedia Homepage" type="SETUP">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:14:04.560536" level="INFO">Successfully initialized new page object and opened url: https://en.wikipedia.org</msg>
+<msg time="2026-03-18T17:14:04.560651" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WIKIPEDIA_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:14:03.601307" elapsed="0.959595"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2026-03-18T17:14:04.562314" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2026-03-18T17:14:04.567756" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2026-03-18T17:14:04.561165" elapsed="0.007128"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:14:03.600121" elapsed="0.968551"/>
+</kw>
+<kw name="Search Wikipedia For">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-18T17:14:04.572895" level="FAIL">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</msg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-18T17:14:04.571415" elapsed="0.001639">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-18T17:14:04.573519" elapsed="0.000431"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>networkidle</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2026-03-18T17:14:04.574368" elapsed="0.000398"/>
+</kw>
+<arg>Robot Framework</arg>
+<status status="FAIL" start="2026-03-18T17:14:04.570065" elapsed="0.005044">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Page Should Contain Text">
+<arg>test automation</arg>
+<status status="NOT RUN" start="2026-03-18T17:14:04.575409" elapsed="0.000237"/>
+</kw>
+<msg time="2026-03-18T17:14:04.678246" level="INFO">Switching context to context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb in CURRENT</msg>
+<msg time="2026-03-18T17:14:04.701373" level="INFO">Successfully changed active context: context=59a1ccdc-66a1-4ea4-8a47-3c5b30a06abb</msg>
+<msg time="2026-03-18T17:14:04.721615" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-18T17:14:03.594304" elapsed="0.982016">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</test>
+<test id="s1-s5-t3" name="Main Page Should Have Featured Article" line="22">
+<kw name="Go To Wikipedia Homepage" type="SETUP">
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T17:14:05.937335" level="INFO">Successfully initialized new page object and opened url: https://en.wikipedia.org</msg>
+<msg time="2026-03-18T17:14:05.937450" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WIKIPEDIA_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T17:14:04.731905" elapsed="1.205818"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2026-03-18T17:14:05.938954" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2026-03-18T17:14:05.944248" level="INFO">Load state domcontentloaded got in 10000</msg>
+<arg>domcontentloaded</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2026-03-18T17:14:05.937990" elapsed="0.006669"/>
+</kw>
+<status status="PASS" start="2026-03-18T17:14:04.730037" elapsed="1.214998"/>
+</kw>
+<kw name="Page Should Contain Text">
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-18T17:14:05.949800" level="FAIL">ValueError: Argument 'assertion_operator' got value 'should contain' that cannot be converted to AssertionOperator or None.</msg>
+<arg>body</arg>
+<arg>should contain</arg>
+<arg>${expected_text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-18T17:14:05.947601" elapsed="0.002440">ValueError: Argument 'assertion_operator' got value 'should contain' that cannot be converted to AssertionOperator or None.</status>
+</kw>
+<arg>Featured article</arg>
+<status status="FAIL" start="2026-03-18T17:14:05.946148" elapsed="0.004369">ValueError: Argument 'assertion_operator' got value 'should contain' that cannot be converted to AssertionOperator or None.</status>
+</kw>
+<msg time="2026-03-18T17:14:05.976930" level="INFO">Switching context to context=225102eb-6f03-4f41-b968-174271211b00 in CURRENT</msg>
+<msg time="2026-03-18T17:14:05.991485" level="INFO">Successfully changed active context: context=225102eb-6f03-4f41-b968-174271211b00</msg>
+<msg time="2026-03-18T17:14:06.012284" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-18T17:14:04.724611" elapsed="1.227010">ValueError: Argument 'assertion_operator' got value 'should contain' that cannot be converted to AssertionOperator or None.</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-03-18T17:14:07.057530" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T17:14:06.020042" elapsed="1.037708"/>
+</kw>
+<status status="FAIL" start="2026-03-18T17:14:01.821820" elapsed="5.236066"/>
+</suite>
+<status status="FAIL" start="2026-03-18T17:13:53.010006" elapsed="14.062609"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">demo</stat>
+<stat pass="1" fail="0" skip="0">sample</stat>
+</tag>
+<suite>
+<stat name="Demo.robot" id="s1" pass="4" fail="5" skip="0">Demo.robot</stat>
+<stat name="Hello" id="s1-s1" pass="1" fail="0" skip="0">Demo.robot.Hello</stat>
+<stat name="Learn" id="s1-s2" pass="1" fail="0" skip="0">Demo.robot.Learn</stat>
+<stat name="Search" id="s1-s3" pass="0" fail="2" skip="0">Demo.robot.Search</stat>
+<stat name="Search1" id="s1-s4" pass="2" fail="0" skip="0">Demo.robot.Search1</stat>
+<stat name="Wikipedia" id="s1-s5" pass="0" fail="3" skip="0">Demo.robot.Wikipedia</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

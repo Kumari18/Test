@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-18T16:41:46.180754" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo.robot" source="C:\Python314\robot-learning\Demo.robot">
+<suite id="s1-s1" name="Hello" source="C:\Python314\robot-learning\Demo.robot\hello.robot">
+<test id="s1-s1-t1" name="My Very First Test" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T16:41:46.479654" level="TRACE">Arguments: [ &lt;SupportedBrowsers.chromium: 1&gt; | headless=True ]</msg>
+<msg time="2026-03-18T16:41:46.480013" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\browser\\traces\\temp\\c3ce8d1d-a693-4c91-8916-0b38307333dc"}</msg>
+<msg time="2026-03-18T16:41:46.520052" level="INFO">Starting Browser process C:\Python314\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64194</msg>
+<msg time="2026-03-18T16:41:46.520169" level="TRACE">Node startup parameters: ['node', 'C:\\Python314\\Lib\\site-packages\\Browser\\wrapper\\index.js', '127.0.0.1', '64194']</msg>
+<msg time="2026-03-18T16:41:46.531830" level="DEBUG">Waiting for Playwright server at 127.0.0.1:64194 to start...</msg>
+<msg time="2026-03-18T16:41:47.564737" level="TRACE">Connected to the playwright process at 127.0.0.1:64194: body: "OK"
+</msg>
+<msg time="2026-03-18T16:41:47.672099" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\browser\\traces\\temp\\c3ce8d1d-a693-4c91-8916-0b38307333dc"}</msg>
+<msg time="2026-03-18T16:41:47.672329" level="TRACE">Return: 'browser=c2101ae5-34c4-4091-b2ca-492f543d1cb6'</msg>
+<arg>chromium</arg>
+<arg>headless=true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T16:41:46.478915" elapsed="1.193538"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T16:41:47.674051" level="TRACE">Arguments: [ 'https://www.google.com' ]</msg>
+<msg time="2026-03-18T16:41:49.042335" level="INFO">Successfully initialized new page object and opened url: https://www.google.com</msg>
+<msg time="2026-03-18T16:41:49.042414" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-03-18T16:41:49.042469" level="DEBUG">Video is not enabled.</msg>
+<msg time="2026-03-18T16:41:49.042581" level="TRACE">Return: {'page_id': 'page=bb9a4047-aaff-4b5e-9a7d-91a388f1832b', 'video_path': ''}</msg>
+<arg>https://www.google.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T16:41:47.673128" elapsed="1.369518"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-03-18T16:41:49.043819" level="TRACE">Arguments: [ &lt;AssertionOperator.contains: '*='&gt; | 'Google' ]</msg>
+<msg time="2026-03-18T16:41:49.053613" level="DEBUG">Active page title is: Google</msg>
+<msg time="2026-03-18T16:41:49.053720" level="INFO">Title: 'Google'</msg>
+<msg time="2026-03-18T16:41:49.053789" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.009859323501586914 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg time="2026-03-18T16:41:49.053844" level="TRACE">Return: 'Google'</msg>
+<arg>contains</arg>
+<arg>Google</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-18T16:41:49.043134" elapsed="0.010771"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-18T16:41:49.054811" level="TRACE">Arguments: [  ]</msg>
+<msg time="2026-03-18T16:41:49.136603" level="INFO">Closed browser</msg>
+<msg time="2026-03-18T16:41:49.136787" level="TRACE">Return: None</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T16:41:49.054336" elapsed="0.082526"/>
+</kw>
+<msg time="2026-03-18T16:41:49.140872" level="TRACE">Suppress error Error: Browser has been closed. when setting timeout.</msg>
+<tag>sample</tag>
+<status status="PASS" start="2026-03-18T16:41:46.478047" elapsed="2.659409"/>
+</test>
+<status status="PASS" start="2026-03-18T16:41:46.214549" elapsed="2.929686"/>
+</suite>
+<suite id="s1-s2" name="Wikipedia" source="C:\Python314\robot-learning\Demo.robot\wikipedia.robot">
+<kw name="Open Test Browser" type="SETUP">
+<msg time="2026-03-18T16:41:49.157586" level="TRACE">Arguments: [  ]</msg>
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-18T16:41:49.158732" level="TRACE">Arguments: [ &lt;SupportedBrowsers.chromium: 1&gt; | headless=False ]</msg>
+<msg time="2026-03-18T16:41:49.159066" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Python314\\robot-learning\\browser\\traces\\temp\\f5486179-8608-4cb6-851a-0dd14ed9a02d"}</msg>
+<msg time="2026-03-18T16:41:49.419876" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Python314\\robot-learning\\browser\\traces\\temp\\f5486179-8608-4cb6-851a-0dd14ed9a02d"}</msg>
+<msg time="2026-03-18T16:41:49.420188" level="TRACE">Return: 'browser=e7cc1cbf-d160-4d52-9a12-49900e5c3855'</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-18T16:41:49.157743" elapsed="0.262540"/>
+</kw>
+<msg time="2026-03-18T16:41:49.420462" level="TRACE">Return: None</msg>
+<status status="PASS" start="2026-03-18T16:41:49.157213" elapsed="0.263312"/>
+</kw>
+<test id="s1-s2-t1" name="Search For Python Programming Language" line="13">
+<kw name="Go To Wikipedia Homepage" type="SETUP">
+<msg time="2026-03-18T16:41:49.428799" level="TRACE">Arguments: [  ]</msg>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-18T16:41:49.432151" level="TRACE">Arguments: [ 'https://en.wikipedia.org' ]</msg>
+<msg time="2026-03-18T16:41:50.753129" level="INFO">Successfully initialized new page object and opened url: https://en.wikipedia.org</msg>
+<msg time="2026-03-18T16:41:50.753356" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-03-18T16:41:50.753516" level="DEBUG">Video is not enabled.</msg>
+<msg time="2026-03-18T16:41:50.753813" level="TRACE">Return: {'page_id': 'page=69a0843d-b3b7-4626-a3c8-6b23795c9e60', 'video_path': ''}</msg>
+<arg>${WIKIPEDIA_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-18T16:41:49.429054" elapsed="1.324968"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<msg time="2026-03-18T16:41:50.756046" level="TRACE">Arguments: [ &lt;PageLoadStates.domcontentloaded: 2&gt; ]</msg>
+<msg time="2026-03-18T16:41:50.756480" level="INFO">Waiting page load to state to receive domcontentloaded in 10000.0</msg>
+<msg time="2026-03-18T16:41:50.769393" level="INFO">Load state domcontentloaded got in 10000</msg>
+<msg time="2026-03-18T16:41:50.769648" level="TRACE">Return: None</msg>
+<arg>domcontentloaded</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="PASS" start="2026-03-18T16:41:50.754454" elapsed="0.015313"/>
+</kw>
+<msg time="2026-03-18T16:41:50.770220" level="TRACE">Return: None</msg>
+<status status="PASS" start="2026-03-18T16:41:49.427895" elapsed="1.342530"/>
+</kw>
+<kw name="Search Wikipedia For">
+<msg time="2026-03-18T16:41:50.772343" level="TRACE">Arguments: [ ${search_term}='Python (programming language)' ]</msg>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-18T16:41:50.774555" level="FAIL">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</msg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-18T16:41:50.772897" elapsed="0.001809">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-18T16:41:50.775149" elapsed="0.000362"/>
+</kw>
+<kw name="Wait For Load State" owner="Browser">
+<arg>networkidle</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits that the page reaches the required load state.</doc>
+<status status="NOT RUN" start="2026-03-18T16:41:50.775830" elapsed="0.000357"/>
+</kw>
+<arg>Python (programming language)</arg>
+<status status="FAIL" start="2026-03-18T16:41:50.771457" elapsed="0.005092">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</kw>
+<kw name="Article Title Should Be">
+<arg>Python (programming language)</arg>
+<status status="NOT RUN" start="2026-03-18T16:41:50.777349" elapsed="0.000463"/>
+</kw>
+<msg time="2026-03-18T16:41:50.783317" level="TRACE">Set timeout to: 10000</msg>
+<msg time="2026-03-18T16:41:50.818002" level="INFO">Switching context to context=e65a5289-a110-43be-adb2-f91c242e37de in CURRENT</msg>
+<msg time="2026-03-18T16:41:50.837310" level="INFO">Successfully changed active context: context=e65a5289-a110-43be-adb2-f91c242e37de</msg>
+<msg time="2026-03-18T16:41:50.862954" level="INFO">Successfully closed Context</msg>
+<tag>demo</tag>
+<status status="FAIL" start="2026-03-18T16:41:49.420657" elapsed="1.357774">Keyword 'Browser.Fill Text' expected 2 to 3 arguments, got 0.</status>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-03-18T16:41:50.866194" level="TRACE">Arguments: [  ]</msg>
+<msg time="2026-03-18T16:41:51.113605" level="INFO">Closed browser</msg>
+<msg time="2026-03-18T16:41:51.113786" level="TRACE">Return: None</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-18T16:41:50.865097" elapsed="0.248759"/>
+</kw>
+<status status="FAIL" start="2026-03-18T16:41:49.151164" elapsed="1.962793"/>
+</suite>
+<meta name="Randomized">Suites and tests (seed 7594295261643023733)</meta>
+<status status="FAIL" start="2026-03-18T16:41:46.183248" elapsed="4.937475"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">demo</stat>
+<stat pass="1" fail="0" skip="0">sample</stat>
+</tag>
+<suite>
+<stat name="Demo.robot" id="s1" pass="1" fail="1" skip="0">Demo.robot</stat>
+<stat name="Hello" id="s1-s1" pass="1" fail="0" skip="0">Demo.robot.Hello</stat>
+<stat name="Wikipedia" id="s1-s2" pass="0" fail="1" skip="0">Demo.robot.Wikipedia</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

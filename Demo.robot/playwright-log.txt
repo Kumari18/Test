@@ -1,0 +1,47 @@
+{"level":30,"time":"2026-03-18T02:25:57.361Z","pid":28760,"hostname":"Compassion123","msg":"Listening on 127.0.0.1:60049"}
+{"level":30,"time":"2026-03-18T02:25:57.434Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-18T02:25:57.587Z","pid":28760,"hostname":"Compassion123","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-18T02:25:57.588Z","pid":28760,"hostname":"Compassion123","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-18T02:25:57.588Z","pid":28760,"hostname":"Compassion123","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-18T02:25:57.594Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-18T02:25:57.594Z","pid":28760,"hostname":"Compassion123","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ed2e2edec18187a023bff2b123ad2561\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=56df319a-f4b9-4d4b-9dcf-84015b84da1e\"}"}
+{"level":30,"time":"2026-03-18T02:25:57.605Z","pid":28760,"hostname":"Compassion123","msg":"Setting default timeout for context context=55f9c59f-e925-4782-bad5-42ca5a839c70 to 10000"}
+{"level":30,"time":"2026-03-18T02:25:57.606Z","pid":28760,"hostname":"Compassion123","msg":"Changed active context: context=55f9c59f-e925-4782-bad5-42ca5a839c70"}
+{"level":30,"time":"2026-03-18T02:25:57.869Z","pid":28760,"hostname":"Compassion123","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-18T02:25:57.869Z","pid":28760,"hostname":"Compassion123","msg":"Changed active page"}
+{"level":30,"time":"2026-03-18T02:26:01.723Z","pid":28760,"hostname":"Compassion123","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-18T02:26:01.742Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-18T02:26:01.750Z","pid":28760,"hostname":"Compassion123","msg":"Removed page=bd39e0f5-14b9-40d5-bc6a-9ab1c47c435d from context=55f9c59f-e925-4782-bad5-42ca5a839c70 page stack"}
+{"level":30,"time":"2026-03-18T02:26:01.843Z","pid":28760,"hostname":"Compassion123","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T02:26:01.848Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T02:26:01.848Z","pid":28760,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Python314\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python314\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-18T02:26:01.853Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T02:26:01.853Z","pid":28760,"hostname":"Compassion123","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-18T02:26:01.901Z","pid":28760,"hostname":"Compassion123","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-18T02:26:01.901Z","pid":28760,"hostname":"Compassion123","msg":"End of node method closeAllBrowsers"}
