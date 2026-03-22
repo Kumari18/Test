@@ -8,5 +8,5 @@ My Very First Test
     New Browser  chromium  headless=true
     New Page  https://www.google.com
     Get Title  contains  Google
-    Close Browser
+    Close Browser  // Comment
     

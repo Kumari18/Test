@@ -13,4 +13,4 @@ Library     OperatingSystem
 *** Test Cases ***
  
 TEST
-    Log To Console   This is a sample test
+    Log To Console   This is a sample test // Comment
